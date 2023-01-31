@@ -1,52 +1,52 @@
-/* fonts  */
+/* font start */
 @font-face {
     font-family: PlayfairDisplay-Regular;
-    src: url(../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+    src: url(../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf);
 }
 @font-face {
     font-family: PlayfairDisplay-Italic;
-    src: url(../fonts/Playfair_Display/PlayfairDisplay-Italic.ttf);
+    src: url(../fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf);
 }
 @font-face {
     font-family: PlayfairDisplay-Bold;
-    src: url(../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf);
+    src: url(../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf);
 }
 @font-face {
     font-family: PlayfairDisplay-Black;
-    src: url(../fonts/Playfair_Display/PlayfairDisplay-Black.ttf);
+    src: url(../fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf);
 }
 
 @font-face {
     font-family: Ubuntu-Light;
     src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
 }
+/* font end */
 
-/* fonts  */
-/* common style  start*/
+/* common css start  */
+/* common css end  */
+
 body {
     margin: 0;
     padding: 0;
     font-family: PlayfairDisplay-Regular;
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
     color: #626262;
 }
-/* common style  end*/
+/* common css end */
 
-/* header style start  */
+/* header start  */
 header {
-    padding: 20px 0;
+    padding: 25px 0;
 }
 .container {
+    overflow: hidden;
     margin: 0 auto;
     width: 90%;
 }
-.content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .logo {
+    margin-top: 13px;
+    float: left;
     width: 12%;
 }
 .logo a {
@@ -55,206 +55,209 @@ header {
     width: 100%;
 }
 .menu {
+    float: right;
     width: 65%;
 }
 .menu ul {
-    text-align: right;
+    /* list-style: none; */
+    float: right;
 }
+
 .menu ul li {
     display: inline-block;
-
-    text-transform: uppercase;
+    float: left;
 }
-
 .menu ul li a {
+    padding: 3px 0;
     margin: 0 50px;
     color: #626262;
     text-decoration: none;
-    padding-bottom: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
 }
 .menu ul li a:hover {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #626262;
 }
 .menu ul li:last-child a {
     margin-right: 0;
 }
-/* header style end  */
+/* header end  */
 
 /* banner start  */
-.b_image img {
+.banner {
+}
+.b_content {
+}
+.b_content img {
     width: 100%;
 }
 /* banner end  */
 
-/* getaway section start */
-.getaway {
+/* getway start  */
+.getway {
     padding: 70px 0;
 }
-.container_2 {
+.container2 {
     margin: 0 auto;
     width: 80%;
 }
-.getaway_content {
+.g_centent {
 }
-.common_light_text {
+.c_light {
     margin: 0;
     font-family: Ubuntu-Light;
+    font-size: 14px;
+    font-weight: 300;
     color: #b4ad9e;
     text-transform: uppercase;
 }
-.common_title {
+.c_title {
     font-size: 30px;
     font-weight: 400;
 }
-.common_text {
+.c_text {
+    margin: 0;
     line-height: 25px;
 }
-.margin_tb_20_30 {
+.m_tb_20_30 {
     margin: 20px 0 30px;
 }
-.mb {
+.m_b_45 {
     margin-bottom: 45px;
 }
-/* getaway section end */
+/* getway end  */
 
-/* blog section start  */
+/* blog start  */
 .blog {
-    padding: 70px 0 15px;
+    padding: 70px 0 20px;
 }
 .blog_content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    overflow: hidden;
 }
 .single_blog {
     margin-bottom: 55px;
     width: 47%;
+    float: left;
 }
-.blog_img {
-    margin-bottom: 30px;
+.single_blog:nth-child(even) {
+    margin-left: 6%;
 }
-.blog_img img {
+.s_img {
+    margin-bottom: 25px;
+}
+.s_img img {
     width: 100%;
 }
-.margin_tb_30_40 {
-    margin: 30px 0 40px;
+.mtb_2535 {
+    margin: 25px 0 35px;
 }
-/* blog section end  */
+/* blog end  */
 
-/* news letter start */
-.newsletter {
+/* news start  */
+.news {
     background-color: #f0f0f0;
     padding: 70px 0;
 }
-.container_3 {
-    display: flex;
-    align-items: center;
+.signup {
+    text-align: center;
 }
-.sign_up {
-    margin: 0 auto;
-
-    width: 400px;
-}
-.s_title {
+.s_h1 {
+    color: #333333;
     margin-top: 0;
     margin-bottom: 70px;
-    font-size: 30px;
-    color: #333333;
 }
-
 .s_form {
-    /* position: relative; */
-    display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    width: 400px;
 }
 .s_form input {
-    padding-left: 5px;
-    width: 90%;
-    height: 30px;
     font-family: PlayfairDisplay-Regular;
-    font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     color: #626262;
-    border: 0;
+    width: 345px;
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+    padding-left: 5px;
+    padding-right: 45px;
 }
 .s_form input:focus {
     outline: 0;
 }
-.s_form input,
 .s_form button {
+    position: absolute;
     background: transparent;
-}
-.s_form button {
-    /* position: absolute; */
-    border: 0;
+    border: none;
     cursor: pointer;
+    top: 15px;
+    right: 0;
 }
 .s_form button:focus {
     outline: 0;
 }
 .s_form button img {
 }
-
-/* news letter end */
+/* news end  */
 
 /* blog2 start  */
 .blog_button {
-    margin: 130px 0;
+    margin: 130px 0 130px;
     text-align: center;
 }
 .blog_button button {
     width: 165px;
     height: 60px;
-    font-family: PlayfairDisplay-Regular;
-    font-weight: 400;
-    font-size: 20px;
+    background-color: transparent;
     border: 1px solid #626262;
-    background: transparent;
+    font-family: PlayfairDisplay-Regular;
+    font-size: 20px;
+    font-weight: 400;
+    color: #626262;
     cursor: pointer;
 }
-
+.blog_button button:hover {
+    border: none;
+    background-color: #626262;
+    color: #ffffff;
+}
 /* blog2 end  */
 
 /* footer start  */
 footer {
     background-color: #f0f0f0;
+    padding: 25px 0;
 }
-.f_content {
-    height: 85px;
-}
-.term,
-.social {
+.terms {
+    float: left;
     width: 30%;
 }
+.terms ul {
+}
+.terms ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.terms ul li a {
+    padding: 3px 0;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    color: #626262;
+}
+
 .social {
-    text-align: right;
+    float: right;
 }
-.term ul,
 .social ul {
-    padding-left: 0;
 }
-.term ul li,
 .social ul li {
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 20px;
 }
-
-.term ul li:first-child {
-    margin-left: 0;
-}
-
-.social ul li:last-child {
-    margin-right: 0;
-}
-
-.term ul li a,
 .social ul li a {
-    text-decoration: none;
-    color: #626262;
-    padding-bottom: 3px;
 }
-.term ul li a:hover {
-    border-bottom: 1px solid;
+.social ul li a img {
 }
-
-/* footer end */
+/* footer end  */ ;
